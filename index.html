@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কৃষি সেবা | সরাসরি কৃষকের বাজার</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- নেভিগেশন -->
+    <nav class="navbar">
+        <div class="logo">🌾 কৃষি<span>সেবা</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">হোম</a></li>
+            <li><a href="#sell">ফসল বিক্রি</a></li>
+            <li><a href="#market">বাজারদর</a></li>
+        </ul>
+    </nav>
+
+    <!-- হিরো সেকশন -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>মাঠ থেকে সরাসরি ক্রেতার হাতে</h1>
+            <p>মাঝখানে কোনো দালাল নেই। নিজের ফসলের দাম নিজেই নির্ধারণ করুন এবং সরাসরি বিক্রি করুন।</p>
+            <a href="#sell" class="btn-primary">ফসল যোগ করুন</a>
+        </div>
+    </section>
+
+    <!-- মেইন কন্টেন্ট এরিয়া -->
+    <main class="container">
+        
+        <!-- ফসল যোগ করার ফর্ম -->
+        <section id="sell" class="form-section">
+            <div class="form-card">
+                <h2>আপনার ফসল বাজারে তুলুন</h2>
+                <form id="cropForm">
+                    <div class="input-group">
+                        <label for="farmerName">কৃষকের নাম</label>
+                        <input type="text" id="farmerName" placeholder="আপনার নাম লিখুন" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="cropName">ফসলের নাম</label>
+                        <input type="text" id="cropName" placeholder="যেমন: ধান, আলু, পেঁয়াজ" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="price">প্রতি কেজির দাম (৳)</label>
+                        <input type="number" id="price" placeholder="কত টাকা কেজি?" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="location">জেলা/গ্রাম</label>
+                        <input type="text" id="location" placeholder="কোথা থেকে বিক্রি করছেন?" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">মোবাইল নম্বর</label>
+                        <input type="tel" id="phone" placeholder="ক্রেতা যাতে যোগাযোগ করতে পারে" required>
+                    </div>
+                    <button type="submit" class="btn-submit">বাজারে পোস্ট করুন</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- লাইভ মার্কেটপ্লেস (এখানে কার্ডগুলো যুক্ত হবে) -->
+        <section id="market" class="market-section">
+            <h2>আজকের লাইভ বাজার</h2>
+            <div id="market-grid" class="market-grid">
+                <!-- ডেমো কার্ড (জাভাস্ক্রিপ্ট দিয়ে আরও কার্ড যুক্ত হবে) -->
+                <div class="crop-card">
+                    <h3>টাটকা টমেটো</h3>
+                    <p class="price">৳ ৪০ / কেজি</p>
+                    <hr>
+                    <p><strong>কৃষক:</strong> রহিম মিয়া</p>
+                    <p><strong>স্থান:</strong> নদীয়া</p>
+                    <p><strong>যোগাযোগ:</strong> 017XXXXXXX</p>
+                    <button class="btn-buy">কল করুন</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ফুটার -->
+    <footer>
+        <p>&copy; ২০২৬ কৃষি সেবা | Hack for Social Cause Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
